@@ -46,3 +46,18 @@ $$
 
 ### Things to note:
 An $m \times n$ matrix will need to be multiplied by a vector of size $n$ or else this will not work.
+
+## Code explanation:
+The function `matrix_dot_vector` takes two parameters:
+- `a`: a 2D list representing the matrix
+- `b`: a 1D list representing the vector
+
+The function attempts to compute the dot product of the matrix and vector. However, there's a small error in the condition. It should check if the number of columns in the matrix (len(a[0])) is equal to the length of the vector (len(b)), not if the number of rows in the matrix (len(a)) is equal to the length of the vector.
+
+If the dimensions are compatible, it computes the dot product:
+1. It iterates through each row of the matrix.
+2. For each row, it computes the sum of element-wise products with the vector.
+3. The result is appended to a list `l`.
+4. Finally, it returns the list `l` containing the dot product results.
+
+If the dimensions are not compatible, it returns -1.
