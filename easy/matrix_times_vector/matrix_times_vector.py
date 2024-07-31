@@ -2,9 +2,8 @@ def matrix_dot_vector(a : list[list[int|float]], b : list[int|float]) -> list[in
     if len(a) == len(b):
         l = []
         for i in a:
-            temp = 0
+            temp, c = 0, 0
             for j in i:
-                c = 0
                 temp += j * b[c]
                 c += 1
             l.append(temp)
