@@ -17,7 +17,7 @@ Refer to the following articles on the basics of Git and GitHub and can also con
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-- Take a look at the Existing [Issues](https://github.com/Haleshot/Competitive-Programming/issues) or create your own Issues!
+- Take a look at the Existing [Issues](https://github.com/Haleshot/Deep-ML/issues) or create your own Issues!
 - Wait for the Issue to be assigned to you after which you can start working on it.
 - Fork the Repo and create a Branch for any Issue that you are working upon.
 - Read the [Code of Conduct](CODE_OF_CONDUCT.md)
@@ -26,19 +26,19 @@ Refer to the following articles on the basics of Git and GitHub and can also con
 
 ## ⭐Making a Pull Request:
 
-**1.** Fork [this](https://github.com/Haleshot/Competitive-Programming) repository.
+**1.** Fork [this](https://github.com/Haleshot/Deep-ML) repository.
 
 
 **2.** Clone the forked repository. Open terminal and type:
 
 ```bash
-git clone https://github.com/<your-github-username>/Competitive-Programming.git
+git clone https://github.com/<your-github-username>/Deep-ML.git
 ```
 
 **3.** Navigate to the project directory.
 
 ```bash
-cd Competitive-Programming
+cd Deep-ML
 ```
 
 **4.** Make a feature branch
@@ -64,7 +64,7 @@ git push origin <brach-name>
 
 **8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
 
-**9.** **Congratulations!** Sit and relax, you've made your contribution to [Competitive-Programming](https://github.com/Haleshot/Competitive-Programming) project.
+**9.** **Congratulations!** Sit and relax, you've made your contribution to [Deep-ML](https://github.com/Haleshot/Deep-ML) project.
 
 
 ***:trophy: After this, project leaders and mentors will review the changes and will merge your PR if they are found good, otherwise we will suggest the required changes.***
