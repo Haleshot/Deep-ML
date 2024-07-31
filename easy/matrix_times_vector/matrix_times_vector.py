@@ -13,4 +13,3 @@ def matrix_dot_vector(a : list[list[int|float]], b : list[int|float]) -> list[in
 if __name__ == "__main__": 
     a = [[1, 2], [2, 4]]
     b = [1, 2]
-    print(matrix_dot_vector(a, b))
