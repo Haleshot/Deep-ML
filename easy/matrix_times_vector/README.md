@@ -52,7 +52,10 @@ The function `matrix_dot_vector` takes two parameters:
 - `a`: a 2D list representing the matrix
 - `b`: a 1D list representing the vector
 
-The function attempts to compute the dot product of the matrix and vector. However, there's a small error in the condition. It should check if the number of columns in the matrix (len(a[0])) is equal to the length of the vector (len(b)), not if the number of rows in the matrix (len(a)) is equal to the length of the vector.
+The function attempts to compute the dot product of the matrix and vector. 
+- The condition if len(a) == len(b): checks if the number of rows in the matrix equals the length of the vector. This isn't the standard condition for matrix-vector multiplication, but it does ensure that the resulting vector will have the same number of elements as the input vector.
+- My implementation will work correctly for square matrices where the number of rows equals the number of columns. In this case, checking len(a) == len(b) is equivalent to checking if the number of columns in the matrix equals the length of the vector.
+- For non-square matrices, this implementation will still produce a result, but it may not be the conventional matrix-vector product. It will compute a result vector with the same number of elements as the input vector, using as many elements from each row of the matrix as there are in the vector.
 
 If the dimensions are compatible, it computes the dot product:
 1. It iterates through each row of the matrix.
