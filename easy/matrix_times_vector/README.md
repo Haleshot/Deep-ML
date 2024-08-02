@@ -1,5 +1,3 @@
-Certainly! Here's a README file for the Matrix times Vector (Easy) problem, following a similar structure to the one I created for Scalar Multiplication of a Matrix:
-
 # Matrix times Vector (Easy)
 
 ## Table of Contents
