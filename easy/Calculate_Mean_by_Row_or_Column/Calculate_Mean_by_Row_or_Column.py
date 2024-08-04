@@ -13,6 +13,7 @@ def calculate_matrix_mean(matrix: list[list[float]], mode: str) -> list[float]:
                 sum += i[0]
             print(sum)
             l.append(sum/len(matrix[0]))
+        
     return l
 
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
