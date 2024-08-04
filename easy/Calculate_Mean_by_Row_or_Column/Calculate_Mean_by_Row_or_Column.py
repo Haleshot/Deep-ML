@@ -7,7 +7,7 @@ def calculate_matrix_mean(matrix: list[list[float]], mode: str) -> list[float]:
             sum += i[0]
 
     elif mode == "column":
-        for k in range(len(matrix[0])):
+        for _ in range(len(matrix[0])):
             sum = 0
             for i in matrix:
                 sum += i[0]
