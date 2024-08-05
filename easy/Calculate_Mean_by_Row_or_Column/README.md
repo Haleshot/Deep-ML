@@ -43,7 +43,7 @@ $$
 \mu_{\text{row } i} = \frac{1}{n} \sum_{j=1}^{n} a_{ij}
 $$
 
-where \(a_{ij}\) is the matrix element in the \(i^{th}\) row and \(j^{th}\) column, and \(n\) is the total number of columns.
+where \(a_{ij}\) is the matrix element in the \(i^{\text{th}}\) row and \(j^{\text{th}}\) column, and \(n\) is the total number of columns.
 
 ### Column Mean
 
