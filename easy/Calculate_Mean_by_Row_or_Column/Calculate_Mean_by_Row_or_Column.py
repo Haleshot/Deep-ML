@@ -1,22 +1,27 @@
 def calculate_matrix_mean(matrix: list[list[float]], mode: str) -> list[float]:
-    print("rows ", len(matrix), " columns", len(matrix[0]))
     l = []
     if mode == "row":
-        sum = 0
-        for i in matrix:
-            sum += i[0]
+        for n in range(len(matrix)):
+            sum = 0
+            for i in matrix[n]:
+                sum += i
+            l.append(sum/len(matrix))
 
     elif mode == "column":
-        for _ in range(len(matrix[0])):
+        for n in range(len(matrix[0])):
             sum = 0
-            for i in matrix:
-                print(i[0])
+            for i in [matrix[n]]:
+                print(i)
                 sum += i[0]
-            print(sum)
+            # print(sum)
             l.append(sum/len(matrix[0]))
 
     return l
 
+# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# mode = "column"
+
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-mode = "column"
+mode = 'row'
+
 print(calculate_matrix_mean(matrix=matrix, mode=mode))
