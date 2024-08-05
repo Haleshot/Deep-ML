@@ -18,10 +18,10 @@ def calculate_matrix_mean(matrix: list[list[float]], mode: str) -> list[float]:
 
     return l
 
-# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-# mode = "column"
-
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-mode = 'row'
+mode = "column"
+
+# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# mode = 'row'
 
 print(calculate_matrix_mean(matrix=matrix, mode=mode))
