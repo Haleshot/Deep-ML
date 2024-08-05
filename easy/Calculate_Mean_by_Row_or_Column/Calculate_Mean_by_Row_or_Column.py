@@ -1,4 +1,4 @@
-# Step 1
+# # Step 1
 
 def calculate_matrix_mean(matrix: list[list[float]], mode: str) -> list[float]:
     l = []
@@ -18,10 +18,27 @@ def calculate_matrix_mean(matrix: list[list[float]], mode: str) -> list[float]:
      
     return l
 
-# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-# mode = "column"
+# # Step 2
+# def calculate_matrix_mean(matrix: list[list[float]], mode: str) -> list[float]:
+#     if mode == "row":
+#         return [sum(row) / len (row) for row in matrix]
+#     elif mode == "column":
+#         return [sum(col) / len(matrix) for col in zip(*matrix)]
+#     else:
+#         raise ValueError("Mode must be of type 'row' or 'column' ")
+
+# # matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# # mode = "column"
+
+# # Step 3
+# import numpy as np
+# def calculate_matrix_mean(matrix: list[list[float]], mode: str) -> list[float]:
+#     if mode == "row":
+#         return np.array(np.sum(matrix, axis=0) // len(matrix)).tolist()
+#     elif mode == "column":
+#         return np.array(np.sum(matrix, axis=1) // len(matrix[0])).tolist()
 
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-mode = 'row'
+mode = 'column'
 
 print(calculate_matrix_mean(matrix=matrix, mode=mode))
