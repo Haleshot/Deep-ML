@@ -36,7 +36,7 @@ A diagonal matrix is a square matrix in which the entries outside the main diago
 
 In this problem, you will write a function to convert a 1D numpy array (vector) into a diagonal matrix. The resulting matrix will have the elements of the input vector on its main diagonal, and zeros elsewhere.
 
-Given a vector $$ \mathbf{x} = [x_1, x_2, \ldots, x_n] $$, the corresponding diagonal matrix $$ \mathbf{D} $$ is:
+Given a vector $$\mathbf{x} = [x_1, x_2, \ldots, x_n]$$, the corresponding diagonal matrix $$\mathbf{D}$$ is:
 
 $$
 \mathbf{D} = \begin{bmatrix}
