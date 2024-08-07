@@ -36,17 +36,17 @@ A diagonal matrix is a square matrix in which the entries outside the main diago
 
 In this problem, you will write a function to convert a 1D numpy array (vector) into a diagonal matrix. The resulting matrix will have the elements of the input vector on its main diagonal, and zeros elsewhere.
 
-Given a vector $$\mathbf{x} = [x_1, x_2, \ldots, x_n]$$, the corresponding diagonal matrix $$\mathbf{D}$$ is:
+Given a vector <img src="https://i.upmath.me/svg/%5Cmathbf%7Bx%7D%20%3D%20%5Bx_1%2C%20x_2%2C%20%5Cldots%2C%20x_n%5D" alt="\mathbf{x} = [x_1, x_2, \ldots, x_n]" />, the corresponding diagonal matrix <img src="https://i.upmath.me/svg/%5Cmathbf%7BD%7D" alt="\mathbf{D}" /> is:
 
-$$
+<img src="https://i.upmath.me/svg/%0A%5Cmathbf%7BD%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%0Ax_1%20%26%200%20%26%200%20%26%20%5Ccdots%20%26%200%20%5C%5C%0A0%20%26%20x_2%20%26%200%20%26%20%5Ccdots%20%26%200%20%5C%5C%0A0%20%26%200%20%26%20x_3%20%26%20%5Ccdots%20%26%200%20%5C%5C%0A%5Cvdots%20%26%20%5Cvdots%20%26%20%5Cvdots%20%26%20%5Cddots%20%26%20%5Cvdots%20%5C%5C%0A0%20%26%200%20%26%200%20%26%20%5Ccdots%20%26%20x_n%0A%5Cend%7Bbmatrix%7D%0A" alt="
 \mathbf{D} = \begin{bmatrix}
-x_1 & 0 & 0 & \cdots & 0 \\
-0 & x_2 & 0 & \cdots & 0 \\
-0 & 0 & x_3 & \cdots & 0 \\
-\vdots & \vdots & \vdots & \ddots & \vdots \\
-0 & 0 & 0 & \cdots & x_n
+x_1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\
+0 &amp; x_2 &amp; 0 &amp; \cdots &amp; 0 \\
+0 &amp; 0 &amp; x_3 &amp; \cdots &amp; 0 \\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+0 &amp; 0 &amp; 0 &amp; \cdots &amp; x_n
 \end{bmatrix}
-$$
+" />
 
 Diagonal matrices are important in various mathematical and scientific computations because of their simple structure and properties.
 
