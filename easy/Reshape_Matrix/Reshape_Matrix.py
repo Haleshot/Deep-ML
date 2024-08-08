@@ -3,16 +3,13 @@ import numpy as np
 # # Step 1:
 def reshape_matrix(a: list[list[int|float]], new_shape: tuple[int, int]) -> list[list[int|float]]:
     l = [[0] * new_shape[1] for _ in range(new_shape[0])]
-    print(l)
-    for i in range(new_shape[1]):
-        for j in range(new_shape[0]):
-            l[i][j] = a[i][j] # type: ignore
-            print(l)
-            
-        l = [i for i in l if i not in a]
-    # l = [a[j][i] for j in range(new_shape[0]) for i in range(new_shape[1])]
-
+    flat_a = [elem for row in a for elem in row]  # Flatten the original matrix
+    # print(flat_a)
+    for i in range(new_shape[0]):
+        for j in range(new_shape[1]):
+            l[i][j] = flat_a[i * new_shape[1] + j] # type: ignore
     return l # type: ignore
+
 
 # # Step 2
 # def reshape_matrix(a: list[list[int|float]], new_shape: tuple[int, int]) -> list[list[int|float]]:
