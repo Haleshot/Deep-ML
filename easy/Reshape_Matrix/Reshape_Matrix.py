@@ -7,7 +7,7 @@ def reshape_matrix(a: list[list[int|float]], new_shape: tuple[int, int]) -> list
     for i in range(new_shape[1]):
         for j in range(new_shape[0]):
             print(a[i][j])
-            l.append(a[i][j])
+            l[i][j] = a[i][j]
             
         l = [i for i in l if i not in a]
     # l = [a[j][i] for j in range(new_shape[0]) for i in range(new_shape[1])]
