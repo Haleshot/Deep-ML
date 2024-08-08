@@ -4,7 +4,7 @@ def transpose_matrix(a : list[list[int | float]]) -> list[list[int | float]]:
     return l
 
 a = [[1, 2, 3], [4, 5, 6]] 
-print(transpose_matrix(a=a))
+print(transpose_matrix(a=a)) # type: ignore
 
 
 # # Step 2
