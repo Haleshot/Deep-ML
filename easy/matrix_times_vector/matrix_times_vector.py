@@ -8,7 +8,7 @@ def matrix_dot_vector(a : list[list[int|float]], b : list[int|float]) -> list[in
                 c += 1
             l.append(temp)
         return l
-    return -1
+    return -1 # type: ignore
 
 if __name__ == "__main__": 
     a = [[1, 2], [2, 4]]

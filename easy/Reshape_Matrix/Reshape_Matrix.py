@@ -6,13 +6,13 @@ def reshape_matrix(a: list[list[int|float]], new_shape: tuple[int, int]) -> list
     print(l)
     for i in range(new_shape[1]):
         for j in range(new_shape[0]):
-            print(a[i][j])
-            l[i][j] = a[i][j]
+            l[i][j] = a[i][j] # type: ignore
+            print(l)
             
         l = [i for i in l if i not in a]
     # l = [a[j][i] for j in range(new_shape[0]) for i in range(new_shape[1])]
 
-    return l
+    return l # type: ignore
 
 # # Step 2
 # def reshape_matrix(a: list[list[int|float]], new_shape: tuple[int, int]) -> list[list[int|float]]:
@@ -21,4 +21,4 @@ def reshape_matrix(a: list[list[int|float]], new_shape: tuple[int, int]) -> list
 
 a = [[1, 2, 3, 4], [5, 6, 7, 8]]
 new_shape = (4, 2)
-print(reshape_matrix(a=a, new_shape=new_shape))
+print(reshape_matrix(a=a, new_shape=new_shape)) # type: ignore

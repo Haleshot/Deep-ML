@@ -6,7 +6,7 @@ def scalar_multiply(matrix: list[list[int|float]], scalar: int|float) -> list[li
 
 matrix = [[1, 2], [3, 4]]
 scalar = 2
-print(scalar_multiply(matrix=matrix, scalar=scalar))
+print(scalar_multiply(matrix=matrix, scalar=scalar)) # type: ignore
 
 
 # import numpy as np

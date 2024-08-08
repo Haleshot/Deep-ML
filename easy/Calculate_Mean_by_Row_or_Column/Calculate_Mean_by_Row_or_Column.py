@@ -41,4 +41,4 @@ def calculate_matrix_mean(matrix: list[list[float]], mode: str) -> list[float]:
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 mode = 'column'
 
-print(calculate_matrix_mean(matrix=matrix, mode=mode))
+print(calculate_matrix_mean(matrix=matrix, mode=mode)) # type: ignore
