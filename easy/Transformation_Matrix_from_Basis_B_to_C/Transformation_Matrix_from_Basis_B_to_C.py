@@ -1,7 +1,12 @@
+# # Step 1
 def transform_basis(B: list[list[int]], C: list[list[int]]) -> list[list[float]]:
     pass
 
 
+# # Step 2
+# import numpy as np
+# def transform_basis(B: list[list[int]], C: list[list[int]]) -> list[list[float]]:
+#     return np.dot(np.linalg.inv(C), B)  # type: ignore
 
 B = [[1, 0, 0], 
     [0, 1, 0], 
