@@ -22,4 +22,4 @@ def linear_regression_normal_equation(X: list[list[float]], y: list[float]) -> l
 
 X = [[1, 1], [1, 2], [1, 3]]
 y = [1, 2, 3]
-print(linear_regression_normal_equation(X=X, y=y))
+print(linear_regression_normal_equation(X=X, y=y)) # type: ignore
