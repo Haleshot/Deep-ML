@@ -24,10 +24,10 @@ import random
     
 
 # # Step 2
-def shuffle_data(X, y, seed=None):
+def shuffle_data(X : list[list[int]], y : list[int], seed=None):
     if seed:
         np.random.seed(seed)
-    idx = np.arange(X.shape[0])
+    idx = np.arange(X.shape[0]) # type: ignore
     np.random.shuffle(idx)
     return X[idx], y[idx]
     
