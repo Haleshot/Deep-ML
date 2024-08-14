@@ -11,14 +11,14 @@ def shuffle_data(X : list[list[int]], y : list[int], seed=None):
         if temp not in x_arr:
             x_arr.append(temp)
             i += 1
-    finalX, finaly = [[]], []
-    print(x_arr)
+    finalX, finaly = [], []
+    # print(x_arr)
     for i in range(len(x_arr)):
         finalX.append(X[x_arr[i]])
         finaly.append(y[x_arr[i]])
 
     return finalX, finaly
-    pass
+    
 
 X = np.array([[1, 2], [3, 4], [5, 6], [7, 8]])
 y = np.array([1, 2, 3, 4])
