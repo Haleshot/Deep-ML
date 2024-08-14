@@ -2,6 +2,8 @@ import numpy as np
 import random
 
 def shuffle_data(X : list[list[int]], y : list[int], seed=None):
+    if seed:
+        np.random.seed()
     x_len, y_len = len(X), len(y) - 1
     x_arr, y_arr = [], []
     # x_arr, y_arr = [random.randint(0, x_len) for _ in range(x_len)], [random.randint(0, y_len) for _ in range(y_len)]
