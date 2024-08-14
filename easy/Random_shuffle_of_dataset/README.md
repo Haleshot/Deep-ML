@@ -1,5 +1,3 @@
-Here's a README file for the Random Shuffle of Dataset problem, formatted in markdown with LaTeX support:
-
 # Random Shuffle of Dataset (Easy)
 
 ## Table of Contents
