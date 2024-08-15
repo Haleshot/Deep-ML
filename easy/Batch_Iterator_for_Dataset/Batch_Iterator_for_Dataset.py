@@ -4,6 +4,7 @@ import numpy as np
 def batch_iterator(X, y=None, batch_size=64):
     n_samples = len(X) # Rows of X array
     batches = (n_samples + batch_size - 1) // batch_size  # Calculate the number of batches
+    # print(batches)
     result = []
 
     for i in range(batches):
