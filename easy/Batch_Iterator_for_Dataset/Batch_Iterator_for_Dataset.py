@@ -2,7 +2,8 @@ import numpy as np
 
 def batch_iterator(X, y=None, batch_size=64):
     # Your code here
-    pass
+    if y:
+        batches = (len(X) // batch_size) + 1
 
 X = np.array([[1, 2], 
                   [3, 4], 
