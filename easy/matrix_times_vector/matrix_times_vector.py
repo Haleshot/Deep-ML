@@ -1,4 +1,6 @@
-def matrix_dot_vector(a : list[list[int|float]], b : list[int|float]) -> list[int|float]:
+def matrix_dot_vector(
+    a: list[list[int | float]], b: list[int | float]
+) -> list[int | float]:
     if len(a) == len(b):
         l = []
         for i in a:
@@ -8,8 +10,9 @@ def matrix_dot_vector(a : list[list[int|float]], b : list[int|float]) -> list[in
                 c += 1
             l.append(temp)
         return l
-    return -1 # type: ignore
+    return -1  # type: ignore
 
-if __name__ == "__main__": 
+
+if __name__ == "__main__":
     a = [[1, 2], [2, 4]]
     b = [1, 2]
