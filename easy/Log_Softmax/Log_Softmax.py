@@ -18,4 +18,4 @@ def log_softmax(scores: list[int | float]) -> np.ndarray:
 #     return scores - np.log(np.sum(np.exp(scores)))
 
 A = np.array([1, 2, 3])
-print(log_softmax(A))
+print(log_softmax(A)) # type: ignore
