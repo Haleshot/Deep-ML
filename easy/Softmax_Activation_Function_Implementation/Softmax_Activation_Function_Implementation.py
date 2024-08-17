@@ -18,4 +18,4 @@ def softmax(scores: list[int | float]) -> list[float]:
 #     return probabilities
 
 scores = [1, 2, 3]
-print(softmax(scores=scores)) # type: ignore
+print(softmax(scores=scores))  # type: ignore
