@@ -3,8 +3,10 @@ import math
 
 # # Step 1
 
+
 def sigmoid(z):
     return round(1 / (1 + math.exp(-z)), 4)
+
 
 # # Step 2
 # def sigmoid(z: float) -> float:
