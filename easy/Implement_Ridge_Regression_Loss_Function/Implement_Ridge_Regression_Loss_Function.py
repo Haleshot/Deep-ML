@@ -1,9 +1,13 @@
 import numpy as np
 
-
-def ridge_loss(X: np.ndarray, w: np.ndarray, y_true: np.ndarray, alpha: float) -> float:
+# # Step 1
+def ridge_loss(X: np.ndarray, w: np.ndarray, y_true: np.ndarray, alpha: float) -> float:  # type: ignore
     # Your code here
-    pass
+    y_pred = (X @ w).tolist()
+    MSE = np.mean((y_true - y_pred)**2).tolist()
+    reg = alpha * np.sum(w**2).tolist()
+    return MSE + reg
+
 
 
 X = np.array([[1, 1], [2, 1], [3, 1], [4, 1]])
