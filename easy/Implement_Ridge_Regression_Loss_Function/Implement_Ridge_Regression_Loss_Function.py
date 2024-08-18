@@ -8,6 +8,8 @@ def ridge_loss(X: np.ndarray, w: np.ndarray, y_true: np.ndarray, alpha: float) -
     reg = alpha * np.sum(w**2).tolist()
     return MSE + reg
 
+# # Step 2:
+def ridge_loss()
 
 
 X = np.array([[1, 1], [2, 1], [3, 1], [4, 1]])
