@@ -4,12 +4,13 @@ def relu(z: float) -> float:
 
 
 # # Step 2
+# import numpy as np
 # def relu(z: float) -> float:
 #     # Your code here
 #     if z <= 0:
 #         return 0
 #     else:
-#         return max(0, z)
+#         return np.max(0, z)
 
 
 # Testing
