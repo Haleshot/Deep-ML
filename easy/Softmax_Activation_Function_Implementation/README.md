@@ -32,9 +32,9 @@ The softmax function is a generalization of the sigmoid function and is used in 
 
 The softmax function is mathematically represented as:
 
-$$
-\text{softmax}(z_i) = \frac{e^{z_i}}{\sum_{j} e^{z_j}}
-$$
+```math
+L(\beta) = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \alpha \sum_{j=1}^{p} \beta_j^2
+```
 
 ### Characteristics
 
