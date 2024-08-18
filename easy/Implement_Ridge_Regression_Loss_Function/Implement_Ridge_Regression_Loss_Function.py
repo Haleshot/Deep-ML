@@ -21,11 +21,11 @@ def ridge_loss(X: np.ndarray, w: np.ndarray, y_true: np.ndarray, alpha: float) -
         # y_pred[i] += [i for i in y_pred]
             
     # print(X @ w)
-    MSE = (((y_true - y_pred) ** 2) / len(X)).tolist()
+    MSE = sum((((y_true - y_pred) ** 2) / len(X)).tolist())
     sum_w = sum([i**2 for i in w])
     reg = alpha * sum_w
-    print(MSE, reg)
-    return sum(MSE + reg)
+    # print(MSE, reg)
+    return MSE + reg
 
 
 X = np.array([[1, 1], [2, 1], [3, 1], [4, 1]])
