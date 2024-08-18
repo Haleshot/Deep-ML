@@ -49,10 +49,9 @@ Ridge Regression is a linear regression method with a regularization term to pre
 The Ridge Loss function combines MSE and the penalty term:
 
 
-$$
+```math
 L(\beta) = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \alpha \sum_{j=1}^{p} \beta_j^2
-$$
-
+```
 
 Where:
 - $n$ is the number of samples
