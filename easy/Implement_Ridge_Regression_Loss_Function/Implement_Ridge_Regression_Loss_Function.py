@@ -1,5 +1,6 @@
 import numpy as np
 
+
 # # Step 1:
 def ridge_loss(X: np.ndarray, w: np.ndarray, y_true: np.ndarray, alpha: float) -> float:
     y_pred = []
@@ -9,7 +10,7 @@ def ridge_loss(X: np.ndarray, w: np.ndarray, y_true: np.ndarray, alpha: float) -
             temp += X[i][j] * w[j]
         y_pred.append(temp)
         # y_pred[i] += [i for i in y_pred]
-            
+
     # print(X @ w)
     MSE = sum((((y_true - y_pred) ** 2) / len(X)).tolist())
     sum_w = sum([i**2 for i in w])
@@ -26,7 +27,6 @@ def ridge_loss(X: np.ndarray, w: np.ndarray, y_true: np.ndarray, alpha: float) -
 #     reg = alpha * np.sum(w**2).tolist()
 #     # print(MSE, reg)
 #     return MSE + reg
-
 
 
 X = np.array([[1, 1], [2, 1], [3, 1], [4, 1]])
