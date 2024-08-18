@@ -5,5 +5,6 @@ def relu(z: float) -> float:
     else:
         return max(0, z)
 
+
 # # Testing
-# print(relu(2)) 
+# print(relu(2))
