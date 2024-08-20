@@ -8,6 +8,8 @@ def feature_scaling(data: np.ndarray) -> (np.ndarray, np.ndarray):  # type: igno
     ]
     c = 0
     print(np.std(data[0]))
+    print(np.mean(data))
+    print(np.std(data))
     for i in data:
         std_dev = np.std(i)
         mu = np.mean(i)
