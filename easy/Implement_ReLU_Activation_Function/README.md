@@ -1,4 +1,4 @@
-# ReLU Activation Function (Easy)
+# ReLU Activation Function (Easy) ✔
 
 ## Table of Contents
 
