@@ -7,6 +7,7 @@
 - [Learn: Feature Scaling Techniques](#learn-feature-scaling-techniques)
 - [Solutions](#solutions)
   - [Custom Implementation](#custom-implementation)
+  - [NumPy Implementation](#numpy-implementation)
 - [Code Explanation](#code-explanation)
 
 ## Problem Statement
@@ -74,6 +75,26 @@ def feature_scaling(data: np.ndarray) -> (np.ndarray, np.ndarray):  # type: igno
 
 data = np.array([[1, 2], [3, 4], [5, 6]])
 print(feature_scaling(data=data))
+```
+
+### NumPy Implementation
+
+```python
+import numpy as np
+
+def feature_scaling(data: np.ndarray) -> (np.ndarray, np.ndarray):
+    # Standardization
+    standardized_data = (data - np.mean(data, axis=0)) / np.std(data, axis=0)
+
+    # MinMax normalization
+    normalized_data = (data - np.min(data, axis=0)) / (np.max(data, axis=0) - np.min(data, axis=0))
+
+    return (
+        np.round(standardized_data, 4).tolist(),
+        np.round(normalized_data, 4).tolist(),
+    )
+
+# Usage remains the same as the custom implementation
 ```
 
 ## Code Explanation
