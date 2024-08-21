@@ -1,4 +1,4 @@
-# Batch Iterator for Dataset (Easy)
+# Batch Iterator for Dataset (Easy) ✔
 
 ## Table of Contents
 
