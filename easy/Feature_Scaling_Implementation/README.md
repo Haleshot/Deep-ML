@@ -76,8 +76,6 @@ data = np.array([[1, 2], [3, 4], [5, 6]])
 print(feature_scaling(data=data))
 ```
 
-### NumPy Implementation
-
 ## Code Explanation
 
 The custom implementation of the `feature_scaling` function takes a 2D NumPy array `data` as input, where each row represents a data sample and each column represents a feature.
