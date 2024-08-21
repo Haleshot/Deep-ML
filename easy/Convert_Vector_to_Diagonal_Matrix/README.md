@@ -1,4 +1,4 @@
-# Convert Vector to Diagonal Matrix (Easy)
+# Convert Vector to Diagonal Matrix (Easy) ✔
 
 ## Table of Contents
 
