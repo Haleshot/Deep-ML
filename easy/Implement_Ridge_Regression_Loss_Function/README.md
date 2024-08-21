@@ -1,4 +1,4 @@
-# Ridge Regression Loss Function (Easy)
+# Ridge Regression Loss Function (Easy) ✔
 
 ## Table of Contents
 
