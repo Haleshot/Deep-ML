@@ -1,4 +1,4 @@
-# Calculate Accuracy Score (Easy)
+# Calculate Accuracy Score (Easy) ✔
 
 ## Table of Contents
 
