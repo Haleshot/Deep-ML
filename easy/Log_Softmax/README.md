@@ -1,4 +1,4 @@
-# Implementation of Log Softmax Function (Easy)
+# Implementation of Log Softmax Function (Easy) ✔
 
 ## Table of Contents
 

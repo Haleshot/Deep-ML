@@ -1,4 +1,4 @@
-# Matrix times Vector (Easy)
+# Matrix times Vector (Easy) ✔
 
 ## Table of Contents
 - [Problem Statement](#problem-statement)

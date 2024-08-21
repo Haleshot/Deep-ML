@@ -1,4 +1,4 @@
-# Random Shuffle of Dataset (Easy)
+# Random Shuffle of Dataset (Easy) ✔
 
 ## Table of Contents
 

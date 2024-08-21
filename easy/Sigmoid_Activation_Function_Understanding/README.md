@@ -1,4 +1,4 @@
-# Sigmoid Activation Function Understanding (Easy)
+# Sigmoid Activation Function Understanding (Easy) ✔
 
 ## Table of Contents
 

@@ -1,4 +1,4 @@
-# Linear Regression Using Normal Equation (Easy)
+# Linear Regression Using Normal Equation (Easy) ✔
 
 ## Table of Contents
 

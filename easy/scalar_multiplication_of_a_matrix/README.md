@@ -1,4 +1,4 @@
-# Scalar Multiplication of a Matrix (Easy)
+# Scalar Multiplication of a Matrix (Easy) ✔
 
 ## Table of Contents
 

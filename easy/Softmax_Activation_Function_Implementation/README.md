@@ -1,4 +1,4 @@
-# Softmax Activation Function Implementation (Easy)
+# Softmax Activation Function Implementation (Easy) ✔
 
 ## Table of Contents
 
