@@ -74,9 +74,6 @@ def leaky_relu(z: float, alpha: float = 0.01) -> float | int: # type: ignore
         return z
     else:
         return alpha * z
-
-data = np.array([[1, 2], [3, 4], [5, 6]])
-print(feature_scaling(data=data))
 ```
 
 ## Code Explanation
