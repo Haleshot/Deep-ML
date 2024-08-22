@@ -92,5 +92,3 @@ The function works as follows:
 This implementation directly applies the mathematical definition of the Leaky ReLU function. It preserves positive inputs and scales negative inputs by the factor `alpha`, allowing a small gradient to pass through for negative values.
 
 Note: The `# type: ignore` comment is used to suppress type checking warnings, as the function's return type annotation includes both `float` and `int`.
-
-The example usage at the end of the code snippet appears to be unrelated to the Leaky ReLU function. It seems to be calling a `feature_scaling` function, which is not defined in the provided code. This part may need to be removed or replaced with relevant examples of using the `leaky_relu` function.
