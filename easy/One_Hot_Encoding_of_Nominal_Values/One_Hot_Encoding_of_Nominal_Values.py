@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def to_categorical(x, n_col=None):
+def to_categorical(x : np.ndarray, n_col=None):
     # Your code here
     pass
 
