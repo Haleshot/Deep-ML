@@ -1,16 +1,19 @@
 import numpy as np
 
+
 # # Step 1
 def to_categorical(x, n_col=None):
     # Your code here
     if n_col is None:
         n_col = x.max() + 1  # Determine the number of columns from the input array
-    
+
     one_hot = np.zeros((x.size, n_col), dtype=int)
     # print(one_hot)
     one_hot[np.arange(x.size), x] = 1
-    
+
     return one_hot
+
+
 # # Step 2
 # def to_categorical(x, n_col=None):
 #     # One-hot encoding of nominal values
@@ -22,7 +25,6 @@ def to_categorical(x, n_col=None):
 #     # Set the appropriate elements to 1
 #     one_hot[np.arange(x.shape[0]), x] = 1
 #     return one_hot
-    
 
 
 x = np.array([0, 1, 2, 1, 0])
