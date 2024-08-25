@@ -66,4 +66,4 @@ X = np.array([[1, 1], [1, 2], [1, 3]])
 y = np.array([1, 2, 3])
 alpha = 0.01
 iterations = 1000
-print(linear_regression_gradient_descent(X=X, y=y, alpha=alpha, iterations=iterations))  # type: ignore
+print(linear_regression_gradient_descent(X=X, y=y, alpha=alpha, num_iterations=iterations))  # type: ignore
