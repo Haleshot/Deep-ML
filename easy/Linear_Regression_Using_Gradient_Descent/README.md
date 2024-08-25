@@ -49,7 +49,7 @@ Where:
 ```python
 import numpy as np
 
-def linear_regression_gradient_descent(X, y, alpha, num_iterations):
+def linear_regression_gradient_descent(X, y, alpha, num_iterations) -> np.ndarray:
     """
     Perform linear regression using gradient descent.
 
