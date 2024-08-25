@@ -10,6 +10,7 @@ def linear_regression_gradient_descent(
 
     return theta
 
+
 # Testing
 X = np.array([[1, 1], [1, 2], [1, 3]])
 y = np.array([1, 2, 3])
