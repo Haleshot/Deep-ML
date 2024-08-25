@@ -2,7 +2,7 @@ import numpy as np
 
 
 # # Step 1
-def linear_regression_gradient_descent(X, y, alpha, num_iterations):
+def linear_regression_gradient_descent(X, y, alpha, num_iterations) -> np.ndarray:
     """
     Perform linear regression using gradient descent.
 
