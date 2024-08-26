@@ -40,9 +40,9 @@ A kernel function in machine learning is used to measure the similarity between 
 
 The linear kernel between two vectors $\mathbf{x}_1$ and $\mathbf{x}_2$ is mathematically defined as:
 
- <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mrow data-mjx-texclass="ORD">
-    <mo></mo>
+    <mo>$</mo>
   </mrow>
   <mi>K</mi>
   <mo stretchy="false">(</mo>
@@ -103,7 +103,7 @@ The linear kernel between two vectors $\mathbf{x}_1$ and $\mathbf{x}_2$ is mathe
       <mi>i</mi>
     </mrow>
   </msub>
-</math> 
+</math>
 
 Where $n$ is the number of features, and $x_{1,i}$ and $x_{2,i}$ are the components of the vectors $\mathbf{x}_1$ and $\mathbf{x}_2$ respectively.
 
