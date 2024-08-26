@@ -107,10 +107,8 @@ The NumPy implementations use built-in functions:
 
 Both NumPy functions are more efficient and can handle multi-dimensional arrays, unlike the custom implementation.
 
-## Mathematical Definition
+## Note on Multidimensional Arrays
 
-To ensure proper rendering of LaTeX equations in various Markdown environments, we'll use inline LaTeX notation. The linear kernel between two vectors $\mathbf{x}_1$ and $\mathbf{x}_2$ is mathematically defined as:
+The custom implementation and `np.dot()` work correctly for 1D arrays, which is sufficient for the given test cases. However, `np.inner()` is the most versatile approach, as it can handle both 1D and 2D arrays correctly. For a more robust solution that works with multidimensional inputs, `np.inner()` is recommended.
 
-
-
-Where $n$ is the number of features, and $x_{1,i}$ and $x_{2,i}$ are the components of the vectors $\mathbf{x}_1$ and $\mathbf{x}_2$ respectively.
+When dealing with 2D arrays or matrices, `np.inner()` computes the inner product of vectors for the last dimension of `x1` and `x2`. This makes it more flexible and suitable for a wider range of input types.
