@@ -116,5 +116,3 @@ To ensure proper rendering of LaTeX equations in various Markdown environments, 
 $K(\mathbf{x}_1, \mathbf{x}_2) = \mathbf{x}_1 \cdot \mathbf{x}_2 = \sum_{i=1}^{n} x_{1,i} \cdot x_{2,i}$
 
 Where $n$ is the number of features, and $x_{1,i}$ and $x_{2,i}$ are the components of the vectors $\mathbf{x}_1$ and $\mathbf{x}_2$ respectively.
-
-[... rest of the content remains the same ...]
