@@ -1,7 +1,8 @@
 import numpy as np
 
+
 # Step 1
-def kernel_function(x1 : np.ndarray, x2 : np.ndarray) -> int:
+def kernel_function(x1: np.ndarray, x2: np.ndarray) -> int:
     # # Normal approach
     # dot_sum = 0
     # for i in range(len(x1)):
