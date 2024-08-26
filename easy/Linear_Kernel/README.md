@@ -40,7 +40,9 @@ A kernel function in machine learning is used to measure the similarity between 
 
 The linear kernel between two vectors $\mathbf{x}_1$ and $\mathbf{x}_2$ is mathematically defined as:
 
-$ K(\mathbf{x}_1, \mathbf{x}_2) = \mathbf{x}_1 \cdot \mathbf{x}_2 = \sum_{i=1}^{n} x_{1,i} \cdot x_{2,i} $
+$$ 
+K(\mathbf{x}_1, \mathbf{x}_2) = \mathbf{x}_1 \cdot \mathbf{x}_2 = \sum_{i=1}^{n} x_{1,i} \cdot x_{2,i} 
+$$
 
 Where $n$ is the number of features, and $x_{1,i}$ and $x_{2,i}$ are the components of the vectors $\mathbf{x}_1$ and $\mathbf{x}_2$ respectively.
 
@@ -112,3 +114,4 @@ Both NumPy functions are more efficient and can handle multi-dimensional arrays,
 The custom implementation and `np.dot()` work correctly for 1D arrays, which is sufficient for the given test cases. However, `np.inner()` is the most versatile approach, as it can handle both 1D and 2D arrays correctly. For a more robust solution that works with multidimensional inputs, `np.inner()` is recommended.
 
 When dealing with 2D arrays or matrices, `np.inner()` computes the inner product of vectors for the last dimension of `x1` and `x2`. This makes it more flexible and suitable for a wider range of input types.
+
