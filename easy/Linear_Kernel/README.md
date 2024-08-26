@@ -40,70 +40,7 @@ A kernel function in machine learning is used to measure the similarity between 
 
 The linear kernel between two vectors $\mathbf{x}_1$ and $\mathbf{x}_2$ is mathematically defined as:
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mrow data-mjx-texclass="ORD">
-    <mo>$</mo>
-  </mrow>
-  <mi>K</mi>
-  <mo stretchy="false">(</mo>
-  <msub>
-    <mrow data-mjx-texclass="ORD">
-      <mi mathvariant="bold">x</mi>
-    </mrow>
-    <mn>1</mn>
-  </msub>
-  <mo>,</mo>
-  <msub>
-    <mrow data-mjx-texclass="ORD">
-      <mi mathvariant="bold">x</mi>
-    </mrow>
-    <mn>2</mn>
-  </msub>
-  <mo stretchy="false">)</mo>
-  <mo>=</mo>
-  <msub>
-    <mrow data-mjx-texclass="ORD">
-      <mi mathvariant="bold">x</mi>
-    </mrow>
-    <mn>1</mn>
-  </msub>
-  <mo>&#x22C5;</mo>
-  <msub>
-    <mrow data-mjx-texclass="ORD">
-      <mi mathvariant="bold">x</mi>
-    </mrow>
-    <mn>2</mn>
-  </msub>
-  <mo>=</mo>
-  <munderover>
-    <mo data-mjx-texclass="OP">&#x2211;</mo>
-    <mrow data-mjx-texclass="ORD">
-      <mi>i</mi>
-      <mo>=</mo>
-      <mn>1</mn>
-    </mrow>
-    <mrow data-mjx-texclass="ORD">
-      <mi>n</mi>
-    </mrow>
-  </munderover>
-  <msub>
-    <mi>x</mi>
-    <mrow data-mjx-texclass="ORD">
-      <mn>1</mn>
-      <mo>,</mo>
-      <mi>i</mi>
-    </mrow>
-  </msub>
-  <mo>&#x22C5;</mo>
-  <msub>
-    <mi>x</mi>
-    <mrow data-mjx-texclass="ORD">
-      <mn>2</mn>
-      <mo>,</mo>
-      <mi>i</mi>
-    </mrow>
-  </msub>
-</math>
+$ K(\mathbf{x}_1, \mathbf{x}_2) = \mathbf{x}_1 \cdot \mathbf{x}_2 = \sum_{i=1}^{n} x_{1,i} \cdot x_{2,i} $
 
 Where $n$ is the number of features, and $x_{1,i}$ and $x_{2,i}$ are the components of the vectors $\mathbf{x}_1$ and $\mathbf{x}_2$ respectively.
 
