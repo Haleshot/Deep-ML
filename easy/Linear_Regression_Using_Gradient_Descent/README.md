@@ -1,4 +1,4 @@
-# Linear Regression Using Gradient Descent ✔
+# Linear Regression Using Gradient Descent (easy) ✔
 
 ## Table of Contents
 

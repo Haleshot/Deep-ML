@@ -1,4 +1,4 @@
-# One-Hot Encoding of Nominal Values ✔
+# One-Hot Encoding of Nominal Values (easy) ✔
 
 ## Table of Contents
 
