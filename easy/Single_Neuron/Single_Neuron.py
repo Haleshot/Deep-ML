@@ -4,7 +4,7 @@ import numpy as np
 
 def single_neuron_model(
     features: list[list[float]], labels: list[int], weights: list[float], bias: float
-) -> (list[float], float): # type: ignore
+) -> (list[float], float):  # type: ignore
     # Your code here
 
     # # Step 1
@@ -12,7 +12,7 @@ def single_neuron_model(
     weighted_sum = []
     for i in features:
         c = 0
-        temp = 0 
+        temp = 0
         for j in i:
             temp += j * weights[c]
             c += 1
@@ -21,15 +21,15 @@ def single_neuron_model(
 
     probabilities = [0] * len(weighted_sum)
     for i in range(len(weighted_sum)):
-        probabilities[i] = round(1/(1 + np.exp(-weighted_sum[i])), 4)
+        probabilities[i] = round(1 / (1 + np.exp(-weighted_sum[i])), 4)
     # print(probabilities)
     mse = 0
     for i in range(len(labels)):
-        mse += (labels[i]- probabilities[i]) ** 2
+        mse += (labels[i] - probabilities[i]) ** 2
     # print(mse/len(labels))
     # weighted_sum = features * weights
     # print(weighted_sum)
-    return probabilities, round(mse/len(labels), 4)
+    return probabilities, round(mse / len(labels), 4)
 
 
 features = [[0.5, 1.0], [-1.5, -2.0], [2.0, 1.5]]
