@@ -3,4 +3,4 @@ def calculate_covariance_matrix(vectors: list[list[float]]) -> list[list[float]]
 
 
 vectors = [[1, 2, 3], [4, 5, 6]]
-print(calculate_covariance_matrix(vectors=vectors))
+print(calculate_covariance_matrix(vectors=vectors)) # type: ignore
