@@ -13,9 +13,9 @@ def calculate_covariance_matrix(vectors: list[list[float]]) -> list[list[float]]
                 (vectors[i][k] - means[i]) * (vectors[j][k] - means[j])
                 for k in range(n_observations)
             ) / (n_observations - 1)
-            covariance_matrix[i][j] = covariance_matrix[j][i] = covariance # type: ignore
+            covariance_matrix[i][j] = covariance_matrix[j][i] = covariance  # type: ignore
 
-    return covariance_matrix # type: ignore
+    return covariance_matrix  # type: ignore
 
 
 # # Step 2
@@ -40,5 +40,5 @@ def calculate_covariance_matrix(vectors: list[list[float]]) -> list[list[float]]
 
 # Example usage
 vectors = [[1, 2, 3], [4, 5, 6]]
-result = calculate_covariance_matrix(vectors) # type: ignore
+result = calculate_covariance_matrix(vectors)  # type: ignore
 print(result)
