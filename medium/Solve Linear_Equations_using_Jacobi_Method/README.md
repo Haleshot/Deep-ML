@@ -59,7 +59,7 @@ import numpy as np
 def solve_jacobi(A: np.ndarray, b: np.ndarray, n: int) -> list:
     aii = np.diag(A).tolist()
 
-    # To understand various ways of calculating non-diagonal elements, referred to this -
+    # To understand various ways of calculating non-diagonal elements, referred to this - https://stackoverflow.com/a/46736275/12346331
     m = np.array(A).shape[0]
     strided = np.lib.stride_tricks.as_strided
     s0, s1 = np.array(A).strides
