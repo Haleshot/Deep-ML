@@ -1,23 +1,27 @@
 import numpy as np
 
-
 # # Step 1
 def solve_jacobi(A: np.ndarray, b: np.ndarray, n: int) -> list:
     aii = np.diag(A).tolist()
-    # print(aii)
+
+    # To understand various ways of calculating non-diagonal elements, referred to this - 
     m = np.array(A).shape[0]
     strided = np.lib.stride_tricks.as_strided
     s0, s1 = np.array(A).strides
     aij = strided(
         np.array(A).ravel()[1:], shape=(m - 1, m), strides=(s0 + s1, s1)
     ).reshape(m, -1)
-    # print(aij)
+    
     x = [0 for _ in range(len(b))]
-    # print(x)
-    i = 0
-    # for _ in range(10):
-    #     x[i] = (1/aii[i]) * (b[i] - sum(aij[i] * x[j] for j != i))
-    #     i += 1
+    
+    # Perform Jacobi iteration for n iterations
+    for _ in range(n):
+        new_x = x.copy()
+        for i in range(m):
+            sum_aij_xj = sum(A[i][j] * x[j] for j in range(m) if j != i)
+            new_x[i] = round((1 / aii[i]) * (b[i] - sum_aij_xj), 4)
+        x = new_x
+    
     return x
 
 
