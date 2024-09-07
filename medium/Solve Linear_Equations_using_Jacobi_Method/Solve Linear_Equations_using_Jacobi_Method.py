@@ -1,5 +1,6 @@
 import numpy as np
 
+
 # # Step 1
 def solve_jacobi(A: np.ndarray, b: np.ndarray, n: int) -> list:
     aii = np.diag(A).tolist()
@@ -14,9 +15,9 @@ def solve_jacobi(A: np.ndarray, b: np.ndarray, n: int) -> list:
     x = [0 for _ in range(len(b))]
     # print(x)
     i = 0
-    for _ in range(10):
-        x[i] = (1/aii[i]) * (b[i] - sum(aij[i] * x[j] for j != i))
-        i += 1
+    # for _ in range(10):
+    #     x[i] = (1/aii[i]) * (b[i] - sum(aij[i] * x[j] for j != i))
+    #     i += 1
     return x
 
 
