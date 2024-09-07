@@ -6,6 +6,7 @@
 - [Example](#example)
 - [Learn: Solving Linear Equations Using the Jacobi Method](#learn-solving-linear-equations-using-the-jacobi-method)
 - [Solutions](#solutions)
+  - [Custom Implementation](#custom-implementation)
   - [NumPy Implementation](#numpy-implementation)
 - [Code Explanation](#code-explanation)
 
@@ -50,12 +51,11 @@ This method assumes that all diagonal elements of $$A$$ are non-zero and that th
 
 ## Solutions
 
-### NumPy Implementation
+### Custom Implementation
 
 ```python
 import numpy as np
 
-# # Step 1
 def solve_jacobi(A: np.ndarray, b: np.ndarray, n: int) -> list:
     aii = np.diag(A).tolist()
 
@@ -79,29 +79,34 @@ def solve_jacobi(A: np.ndarray, b: np.ndarray, n: int) -> list:
 
     return x
 
-# # Step 2
-# def solve_jacobi(A: np.ndarray, b: np.ndarray, n: int) -> list:
-#     d_a = np.diag(A)
-#     nda = A - np.diag(d_a)
-#     x = np.zeros(len(b))
-#     x_hold = np.zeros(len(b))
-#     for _ in range(n):
-#         for i in range(len(A)):
-#             x_hold[i] = (1/d_a[i]) * (b[i] - sum(nda[i]*x))
-#         x = x_hold.copy()
-#     return np.round(x,4).tolist()
-
 A = [[5, -2, 3], [-3, 9, 1], [2, -1, -7]]
 b = [-1, 2, 3]
 n = 2
 print(solve_jacobi(A=A, b=b, n=n))  # type: ignore
 ```
 
+### NumPy Implementation
+
+```python
+import numpy as np
+
+def solve_jacobi(A: np.ndarray, b: np.ndarray, n: int) -> list:
+    d_a = np.diag(A)
+    nda = A - np.diag(d_a)
+    x = np.zeros(len(b))
+    x_hold = np.zeros(len(b))
+    for _ in range(n):
+        for i in range(len(A)):
+            x_hold[i] = (1/d_a[i]) * (b[i] - sum(nda[i]*x))
+        x = x_hold.copy()
+    return np.round(x,4).tolist()
+
+# Usage remains the same as the custom implementation
+```
+
 ## Code Explanation
 
-The provided code offers two implementations of the Jacobi method for solving linear equations. The first implementation (Step 1) is active, while the second (Step 2) is commented out. Let's explain both implementations:
-
-### Step 1 (Active Implementation)
+### Custom Implementation
 
 1. The function `solve_jacobi` takes three parameters:
    - `A`: The coefficient matrix (numpy array)
@@ -131,7 +136,7 @@ The provided code offers two implementations of the Jacobi method for solving li
 
 6. Returns the final solution vector.
 
-### Step 2 (Commented Implementation)
+### NumPy Implementation
 
 1. `d_a = np.diag(A)`: Extracts the diagonal elements of A.
 2. `nda = A - np.diag(d_a)`: Calculates the non-diagonal elements by subtracting the diagonal from A.
@@ -141,6 +146,6 @@ The provided code offers two implementations of the Jacobi method for solving li
    - Copies `x_hold` to `x` after each iteration
 5. Returns the rounded solution vector.
 
-Both implementations follow the Jacobi method algorithm, but the second one (Step 2) uses more numpy operations, which can be more efficient for larger matrices. The active implementation (Step 1) is more explicit in its calculations, which can be helpful for understanding the process.
+Both implementations follow the Jacobi method algorithm, but the NumPy implementation uses more numpy operations, which can be more efficient for larger matrices. The custom implementation is more explicit in its calculations, which can be helpful for understanding the process.
 
 The code then demonstrates the usage of the function with a sample 3x3 system of equations, iterating twice (`n=2`).
