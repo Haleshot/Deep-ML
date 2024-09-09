@@ -7,6 +7,7 @@ def transform_matrix(
     transformed_matrix = np.linalg.inv(T) @ A @ S
     return transformed_matrix
 
+
 A = [[1, 2], [3, 4]]
 T = [[2, 0], [0, 2]]
 S = [[1, 1], [0, 1]]
