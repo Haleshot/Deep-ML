@@ -7,6 +7,7 @@ def k_means_clustering(
     # Your code here
     return final_centroids
 
+
 points = [(1, 2), (1, 4), (1, 0), (10, 2), (10, 4), (10, 0)]
 k = 2
 initial_centroids = [(1, 1), (10, 1)]
