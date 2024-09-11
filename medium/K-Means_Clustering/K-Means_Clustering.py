@@ -5,7 +5,7 @@ def k_means_clustering(
     max_iterations: int,
 ) -> list[tuple[float, float]]:
     # Your code here
-    return final_centroids
+    return final_centroids # type: ignore
 
 
 points = [(1, 2), (1, 4), (1, 0), (10, 2), (10, 4), (10, 0)]
