@@ -1,7 +1,7 @@
 import numpy as np
 import math
 
-
+# # Step 1
 def k_means_clustering(
     points: list[tuple[float, float]],
     k: int,
@@ -15,26 +15,19 @@ def k_means_clustering(
         )  # Euclidean distance formula
 
     final_centroids = initial_centroids
-    # print(final_centroids)
-    update_centroids = []
-    # for _ in range(max_iterations):
-    for point in points:
-        dist_metric1 = euc_dist(point, initial_centroids[0])
-        dist_metric2 = euc_dist(point, initial_centroids[1])
-        cluster = min(dist_metric1, dist_metric2)
-        update_centroids.append([point, cluster])
-    # # list_clusters = [1, 2, 3, 4]
-    # # filtered = filter(lambda key: key[1] == [i for i in list_clusters], update_centroids)
-    # # print(list(filtered))
-    # filtered = list[tuple[float, float]]
-    # for centroid in update_centroids:
-    #     if centroid[1] == 1:
-    #         filtered.append()
-    update_centroids = sorted(update_centroids, key=lambda x:x[1])
-    update_centroids = np.sum(update_centroids, axis=1)
-    sum(update_centroids, )
+    for _ in range(max_iterations):
+        clusters = [[] for _ in range(k)]
+        for point in points:
+            distance = [euc_dist(point, final_centroids[i]) for i in range(k)]
+            closest_cluster_index = distance.index(min(distance))
+            update_centroids.append([point, cluster])
+        update_centroids = sorted(update_centroids, key=lambda x:x[1])
+    sum = 0
+    for i in update_centroids:
+        sum += np.sum(i[0])
+    print(sum)
 
-    return update_centroids  # type: ignore
+    return update_centroids # type: ignore
 
 
 points = [(1, 2), (1, 4), (1, 0), (10, 2), (10, 4), (10, 0)]
