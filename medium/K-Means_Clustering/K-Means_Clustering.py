@@ -20,14 +20,14 @@ def k_means_clustering(
         for point in points:
             distance = [euc_dist(point, final_centroids[i]) for i in range(k)]
             closest_cluster_index = distance.index(min(distance))
-            update_centroids.append([point, cluster])
-        update_centroids = sorted(update_centroids, key=lambda x:x[1])
-    sum = 0
-    for i in update_centroids:
-        sum += np.sum(i[0])
-    print(sum)
+            clusters[closest_cluster_index].append(point)
+    print(clusters)
+    # sum = 0
+    # for i in update_centroids:
+    #     sum += np.sum(i[0])
+    # print(sum)
 
-    return update_centroids # type: ignore
+    return final_centroids # type: ignore
 
 
 points = [(1, 2), (1, 4), (1, 0), (10, 2), (10, 4), (10, 0)]
