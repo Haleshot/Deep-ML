@@ -5,6 +5,8 @@ def k_means_clustering(
     max_iterations: int,
 ) -> list[tuple[float, float]]:
     # Your code here
+    for _ in range(max_iterations):
+        pass
 
     return final_centroids  # type: ignore
 
