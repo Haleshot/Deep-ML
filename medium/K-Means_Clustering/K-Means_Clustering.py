@@ -1,6 +1,7 @@
 import numpy as np
 import math
 
+
 # # Step 1
 def k_means_clustering(
     points: list[tuple[float, float]],
@@ -38,7 +39,8 @@ def k_means_clustering(
     #     sum += np.sum(i[0])
     # print(sum)
 
-    return final_centroids # type: ignore
+    return final_centroids  # type: ignore
+
 
 # # Step 2
 # import numpy as np
@@ -49,14 +51,14 @@ def k_means_clustering(
 # def k_means_clustering(points, k, initial_centroids, max_iterations):
 #     points = np.array(points)
 #     centroids = np.array(initial_centroids)
-    
+
 #     for iteration in range(max_iterations):
 #         # Assign points to the nearest centroid
 #         distances = np.array([euclidean_distance(points, centroid) for centroid in centroids])
 #         assignments = np.argmin(distances, axis=0)
 
 #         new_centroids = np.array([points[assignments == i].mean(axis=0) if len(points[assignments == i]) > 0 else centroids[i] for i in range(k)])
-        
+
 #         # Check for convergence
 #         if np.all(centroids == new_centroids):
 #             break
