@@ -1,5 +1,7 @@
 import numpy as np
 import math
+
+
 def k_means_clustering(
     points: list[tuple[float, float]],
     k: int,
@@ -8,7 +10,8 @@ def k_means_clustering(
 ) -> list[tuple[float, float]]:
     # Your code here
     def euc_dist(x1, x2):
-        return math.sqrt((x2[0] - x1[0])**2 - (x2[1] - x2[1])**2)
+        return math.sqrt((x2[0] - x1[0]) ** 2 - (x2[1] - x2[1]) ** 2)
+
     for _ in range(max_iterations):
         pass
 
