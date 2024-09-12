@@ -10,7 +10,7 @@ def k_means_clustering(
 ) -> list[tuple[float, float]]:
     # Your code here
     def euc_dist(x1, x2):
-        return math.sqrt((x2[0] - x1[0]) ** 2 - (x2[1] - x2[1]) ** 2)
+        return math.sqrt((x2[1] - x1[1]) ** 2 - (x2[0] - x2[0]) ** 2)
 
     for _ in range(max_iterations):
         pass
