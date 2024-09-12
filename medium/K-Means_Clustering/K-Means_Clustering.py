@@ -23,12 +23,16 @@ def k_means_clustering(
         dist_metric2 = euc_dist(point, initial_centroids[1])
         cluster = min(dist_metric1, dist_metric2)
         update_centroids.append([point, cluster])
-    list_clusters = [1, 2, 3, 4]
-    filtered = filter(lambda key: key[1] == [i for i in list_clusters], update_centroids)
-    print(list(filtered))
+    # # list_clusters = [1, 2, 3, 4]
+    # # filtered = filter(lambda key: key[1] == [i for i in list_clusters], update_centroids)
+    # # print(list(filtered))
+    # filtered = list[tuple[float, float]]
     # for centroid in update_centroids:
-    #     if centroid[1]
-        
+    #     if centroid[1] == 1:
+    #         filtered.append()
+    update_centroids = sorted(update_centroids, key=lambda x:x[1])
+    update_centroids = np.sum(update_centroids, axis=1)
+    sum(update_centroids, )
 
     return update_centroids  # type: ignore
 
