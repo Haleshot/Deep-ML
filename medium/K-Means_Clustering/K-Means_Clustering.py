@@ -16,13 +16,21 @@ def k_means_clustering(
 
     final_centroids = initial_centroids
     # print(final_centroids)
-    for _ in range(max_iterations):
-        for point in points:
-            dist_metric1 = euc_dist(point, initial_centroids[0])
-            dist_metric2 = euc_dist(point, initial_centroids[1])
-            cluster = min(dist_metric1, dist_metric2)
+    update_centroids = []
+    # for _ in range(max_iterations):
+    for point in points:
+        dist_metric1 = euc_dist(point, initial_centroids[0])
+        dist_metric2 = euc_dist(point, initial_centroids[1])
+        cluster = min(dist_metric1, dist_metric2)
+        update_centroids.append([point, cluster])
+    list_clusters = [1, 2, 3, 4]
+    filtered = filter(lambda key: key[1] == [i for i in list_clusters], update_centroids)
+    print(list(filtered))
+    # for centroid in update_centroids:
+    #     if centroid[1]
+        
 
-    return final_centroids  # type: ignore
+    return update_centroids  # type: ignore
 
 
 points = [(1, 2), (1, 4), (1, 0), (10, 2), (10, 4), (10, 0)]
