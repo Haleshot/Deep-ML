@@ -17,7 +17,10 @@ def k_means_clustering(
     final_centroids = initial_centroids
     # print(final_centroids)
     for _ in range(max_iterations):
-        euc_dist(final_centroids[1], final_centroids[0])
+        for point in points:
+            dist_metric1 = euc_dist(point, initial_centroids[0])
+            dist_metric2 = euc_dist(point, initial_centroids[1])
+            cluster = min(dist_metric1, dist_metric2)
 
     return final_centroids  # type: ignore
 
