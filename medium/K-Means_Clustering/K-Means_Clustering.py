@@ -16,29 +16,32 @@ def k_means_clustering(
         )  # Euclidean distance formula
 
     final_centroids = initial_centroids
+
+    # Iterate for the given max_iterations
     for _ in range(max_iterations):
-        clusters = [[] for _ in range(k)]
+        clusters = [[] for _ in range(k)] # Create empty lists for clusters
+
+        
+        # Assign points to the nearest centroid (initial draft)
         for point in points:
             distance = [euc_dist(point, final_centroids[i]) for i in range(k)]
             closest_cluster_index = distance.index(min(distance))
             clusters[closest_cluster_index].append(point)
         # print(clusters)
         new_centroids = []
+
+        # Update centroids by computing the mean of points in each cluster
         for cluster in clusters:
-            if cluster:
+            if cluster: # Only update centroids if cluster is not empty
                 new_centroid = tuple(np.round(np.mean(cluster, axis=0), 4))
                 new_centroids.append(new_centroid)
             else:
-                new_centroids.append(final_centroids[clusters.index(cluster)])
+                new_centroids.append(final_centroids[clusters.index(cluster)]) # Keep the same centroid if no points in the cluster
+        
+        # If centroids do not change, break early
         if new_centroids == final_centroids:
             break
         final_centroids = new_centroids
-
-    # sum = 0
-    # for i in update_centroids:
-    #     sum += np.sum(i[0])
-    # print(sum)
-
     return final_centroids  # type: ignore
 
 
