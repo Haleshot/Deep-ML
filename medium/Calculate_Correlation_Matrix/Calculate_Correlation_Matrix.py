@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def calculate_correlation_matrix(X, Y=None):
+def calculate_correlation_matrix(X : np.ndarray, Y=None):
     # Your code here
     pass
 
