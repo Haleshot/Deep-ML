@@ -36,7 +36,7 @@ Deep-ML is a website dedicated to making deep learning challenges accessible and
 
 1. Visit [Deep-ML website](https://www.deep-ml.com) and [repo](https://github.com/Open-Deep-ML/DML-OpenProblem)
 2. Sign up for an account
-3. Explore available challenges
+3. Explore available problems
 
 ## Community
 
