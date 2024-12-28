@@ -41,7 +41,7 @@ Deep-ML is a website dedicated to making deep learning challenges accessible and
 ## Community
 
 - [Discord Server](https://discord.gg/JwMePfMZAV)
-- [Twitter](https://twitter.com/real_deepml)
+- [Twitter](https://x.com/real_deep_ml)
 
 ## Contributing
 
