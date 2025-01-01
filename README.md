@@ -20,7 +20,7 @@ Deep-ML is a website dedicated to making deep learning challenges accessible and
 
 ## Features
 
-- Diverse range of deep learning challenges
+- Diverse range of AI/ML challenges
 - Content for beginners and experts
 - Community-driven learning environment
 
